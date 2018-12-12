@@ -107,6 +107,7 @@ function getMixList() {
 
     xhr.open(method, url, true);
     xhr.onload = function () {
+        console.log('xxxxxxxxxx', xhr.responseText);
         mixes = JSON.parse(xhr.responseText);
         renderMixList();
     };
